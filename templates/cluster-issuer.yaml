@@ -1,0 +1,15 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: letsencrypt-nginx
+  namespace: kong
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: guillaume.miot@viacesi.fr
+    privateKeySecretRef:
+      name: letsencrypt-ingress-private-key
+    solvers:
+      - http01:
+          ingress:
+            class: nginx

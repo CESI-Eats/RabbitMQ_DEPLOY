@@ -1,0 +1,7 @@
+apiVersion: v2
+name: rabbitmq-chart
+version: 1.0.0
+description: Helm chart to deploy RabbitMQ to cesi-eats system
+maintainers:
+  - name: Guillaume Miot
+    email: guillaume.miot@viacesi.fr
