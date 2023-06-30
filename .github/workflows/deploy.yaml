@@ -14,4 +14,4 @@ jobs:
 
       - name: Helm Upgrade
         run: |
-          helm upgrade rabbitmq-chart ./ --install --namespace cesi-eats --create-namespace
+          helm upgrade rabbitmq-chart ./ --install --namespace cesi-eats --create-namespace --recreate-pods
